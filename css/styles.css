@@ -121,6 +121,11 @@ nav {
   color: var(--accent-color);
 }
 
+.hover:hover,
+.hover:focus {
+  color: var(--accent-color);
+}
+
 .menu-link {
   font-weight: 500;
   line-height: 1.14;
@@ -155,11 +160,6 @@ nav {
 
 .contact-icon {
   margin-right: 10px;
-}
-
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
 }
 
 .contact-icon:hover,
@@ -347,18 +347,17 @@ nav {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: #afb1b8;
+  color: #afb1b8;
   background-color: var(--primary-bgc);
 }
 
 .social-list-icon {
-  width: 20px;
-  height: 20px;
+  fill: currentColor;
 }
 
 .social-list-link:hover,
 .social-list-link:focus {
-  fill: var(--primary-bgc);
+  color: var(--primary-bgc);
   background-color: var(--accent-color);
 }
 
@@ -384,13 +383,16 @@ nav {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  fill: #afb1b8;
+  color: #afb1b8;
+}
+.clients-list-icon {
+  fill: currentColor;
 }
 
 .clients-link:hover,
 .clients-link:focus {
   border-color: var(--accent-color);
-  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .footer-logo-studio {
@@ -413,7 +415,7 @@ nav {
 }
 
 .footer-fill-link {
-  fill: var(--primary-bgc);
+  color: var(--primary-bgc);
   background-color: rgba(255, 255, 255, 0.1);
 }
 
